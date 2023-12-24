@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: romofyi-kubernetes-service
+spec:
+  selector:
+    app: romofyi-kubernetes-app
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80  # Expose the service on port 80
+      targetPort: 8080  # Point to the container port
+      nodePort: 31112  # Choose a NodePort value (30000-32767) or let Kubernetes assign one
