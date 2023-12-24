@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: romofyi-kubernetes-container
-          image: krishnamsg/romofyi-e2e-pipeline:1.0.0-9
+          image: krishnamsg/romofyi-e2e-pipeline:1.0.0-10
           ports:
             - containerPort: 80  # Adjust the container port as needed
