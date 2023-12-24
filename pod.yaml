@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: romofyi-kubernetes-pod
+spec:
+  containers:
+    - name: romofyi-kubernetes-container
+      image: krishnamsg/romofyi-e2e-pipeline:1.0.0-9
+      ports:
+        - containerPort: 80  # Adjust the container port as needed
+
