@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: romofyi-kubernetes-deployment
+spec:
+  replicas: 2  # Adjust the number of replicas as needed
+  selector:
+    matchLabels:
+      app: romofyi-kubernetes-app
+  template:
+    metadata:
+      labels:
+        app: romofyi-kubernetes-app
+    spec:
+      containers:
+        - name: romofyi-kubernetes-container
+          image: krishnamsg/romofyi-e2e-pipeline:1.0.0-9
+          ports:
+            - containerPort: 80  # Adjust the container port as needed
