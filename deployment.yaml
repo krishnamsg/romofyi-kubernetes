@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: romofyi-kubernetes-deployment
 spec:
-  replicas: 2  # Adjust the number of replicas as needed
+  replicas: 10  # Adjust the number of replicas as needed
   selector:
     matchLabels:
       app: romofyi-kubernetes-app
